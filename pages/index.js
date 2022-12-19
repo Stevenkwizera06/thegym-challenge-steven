@@ -9,6 +9,7 @@ import Giving from "../components/sections/Giving";
 import News from "../components/sections/News";
 import Numbers from "../components/sections/Numbers";
 import Character from "../components/sections/Character";
+import Degree from "../components/sections/Degree";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
    <News />
    <BottomNews />
    <Discover />
+   <Degree />
    <Numbers />
    <School />
    <Alumni />

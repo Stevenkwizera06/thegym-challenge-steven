@@ -9,57 +9,34 @@ import search from "../../public/icons/search.svg";
 
 function Navbar() {
   return (
-    <div className="bg-dark-blue py-5">
-      <Wrapper>
-        <div className="flex justify-between items-center text-white">
-          <div className="flex gap-4">
-            <Image src={menu} alt="menu" />
-            <div className="flex gap-3">
-              <Image src={tamulogo} alt="TUM" />
-              <span className="md:text-sm md:leading-tight md:flex hidden ">
-                Technical <br /> University <br /> of Munich
-              </span>
-            </div>
-          </div>
-          <div className="flex gap-3 items-center text-sm  font-medium ">
-            <ul className="md:flex gap-5  mr-12 hidden">
-              <Link href="/news">
-                <li>NEWS AND EVENTS</li>
-              </Link>
-
-              <Link href="/studies">
-                <li>STUDIES</li>
-              </Link>
-
-              <Link href="/lifelong">
-                <li>LIFE LONG LEARNING</li>
-              </Link>
-
-              <Link href="/research">
-                <li>RESEARCH</li>
-              </Link>
-
-              <Link href="/innovation">
-                <li>INNOVATION</li>
-              </Link>
-              <Link href="/community">
-                <li>COMMUNITY</li>
-              </Link>
-              <Link href="/about">
-                <li>ABOUT TUM</li>
-              </Link>
-            </ul>
-
-            <div className="flex gap-2 ">
-              <p className="border-r-2 border-white px-2 text-slate-300">DE</p>
-              <p>ENG</p>
-            </div>
-            <Image src={search} alt="search" />
-
-          </div>
-        </div>
-      </Wrapper>
+    <div className="bg-[#0A2D57]  fixed z-50 w-full flex justify-between text-white py-5 px-5 md:px-10">
+    <div className="flex gap-x-2">
+      <Image src={menu} width={33} height={33} alt="logo" />
+      <Image src={tamulogo} width={82} height={42} alt="logo" />
+      <span className="hidden xl:block text-xs">
+        Technical <br />
+        University <br />
+        of Munich
+      </span>
     </div>
+    <div className="flex mt-2 md:mt-3 gap-x-5 md:gap-x-10 font-semibold text-sm uppercase">
+      <ul className="hidden xl:flex gap-x-5">
+        <Link href="/" className="hover:border-b-4">News and events</Link>
+        <Link href="/studies" className="hover:border-b-4">STUDIES</Link>
+        <Link href="/lifelong" className="hover:border-b-4">lifelong learning</Link>
+        <Link href="/research" className="hover:border-b-4">Research</Link>
+        <Link href="/innovation" className="hover:border-b-4">Innovation</Link>
+        <Link href="/community" className="hover:border-b-4">Community</Link>
+        <Link href="/about" className="hover:border-b-4">About Tum</Link>
+      </ul>
+      <div>
+        <span className="border-r pr-1 mr-1 text-gray-700">DE</span>
+        <span>EN</span>
+      </div>
+      <Image src={search} className="-mt-5" width={24} height={24} alt="search" />
+      <Image src={menu} className="xl:hidden -mt-5" width={24} height={24} alt="search" />
+    </div>
+  </div>
   );
 }
 
