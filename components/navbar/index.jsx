@@ -16,7 +16,7 @@ function Navbar() {
             <Image src={menu} alt="menu" />
             <div className="flex gap-3">
               <Image src={tamulogo} alt="TUM" />
-              <span className="text-sm leading-tight ">
+              <span className="md:text-sm md:leading-tight md:flex hidden ">
                 Technical <br /> University <br /> of Munich
               </span>
             </div>
@@ -55,6 +55,7 @@ function Navbar() {
               <p>ENG</p>
             </div>
             <Image src={search} alt="search" />
+
           </div>
         </div>
       </Wrapper>

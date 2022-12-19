@@ -2,7 +2,7 @@ import React from "react";
 
 function Wrapper({ children, styles }) {
   return (
-    <div className={`2xl:max-w-[90.5rem] px-6 mx-auto font-roboto ${styles}`}>
+    <div className={`2xl:max-w-[90.5rem] px-6 mx-auto overflow-y-hidden font-roboto ${styles}`}>
       {children}
     </div>
   );

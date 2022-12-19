@@ -12,7 +12,7 @@ import girl from "../../public/images/girl-plY.webp"
 function News() {
   return (
     <Wrapper>
-      <div className="my-20 grid grid-cols-4 gap-5">
+      <div className="md:my-20 md:grid md:grid-cols-4 md:gap-5 ">
         <div className="col-span-2 text-[#072140]">
           <h1 className="text-3xl font-semibold ">News from TUM</h1>
           <p className="text-[1.3rem] mt-7">
